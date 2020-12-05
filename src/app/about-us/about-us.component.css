@@ -1,0 +1,95 @@
+#AboutUs {
+
+    margin-top:7%;
+}
+
+.Titles {
+    color: white;
+    font-size: xxx-large;
+    font-family: fantasy;
+}
+.Text {
+    color: white;
+    font-size: larger;
+}
+
+.AboutLink {
+    color: white;
+    font-size: larger;
+    border: 1px solid;
+    padding: 10px;
+    position: absolute;
+    margin-top: 15px;
+}
+
+.AboutImages {
+    width:100%;
+    height:100%;
+    margin-top: 10px;
+}
+
+.AboutLink:hover {
+    text-decoration:none;
+    background-color:aqua;
+    color:black;
+    transition-duration:1s;
+}
+
+
+.WhiteRow {
+    background-color:white;
+    color:black !important;
+}
+
+.Titles2 {
+    font-size: 80px;
+    font-family: fantasy;
+}
+
+.Text2 {
+    font-size: 20px;
+}
+
+.LeftDiv {
+    display: flex;
+    /* left: 15%; */
+}
+
+.RightDiv {
+    display: flex;
+    /* top: 100px; */
+    /* right: 30px; */
+}
+
+@media (max-width:768px) {
+    .LeftDiv {
+        display: flex;
+        left: 0%;
+    }
+
+    .RightDiv {
+        display: flex;
+        top: 0px;
+        right: 0px;
+    }
+
+    .AboutLink {
+        color: white;
+        font-size: 12px;
+        border: 1px solid;
+        padding: 5px;
+        position: absolute;
+        margin-top: -36px;
+        left:56%
+    }
+
+    .Titles2 {
+        font-size: 55px;
+        font-family: fantasy;
+    }
+    .Text2 {
+        font-size: 18px;
+    }
+
+
+}

@@ -1,0 +1,65 @@
+<section id="Request">
+    <div class="container">
+        <!--Request Text Above The Form-->
+        <div class="row">
+            <div>
+                <div class="mt-5">
+                    <h1 class="Titles">REQUEST</h1>
+                    <p class="Text mt-4" [innerHTML]="RequestText">
+                
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--The Form-->
+        <div class="row">
+            <form class="form-group" [formGroup] = "MyForm">
+                <label class="FormLabel">Name:</label>
+                <input class="FormInput"
+                formControlName = "Name"
+                 type="text" /><br />
+
+                 <div class="alert alert-danger"
+                 *ngIf="GetObject('Name').touched && GetObject('Name').invalid">
+                 Name Is Required
+                 </div>
+
+                <label class="FormLabel">Email:</label>
+                <input class="FormInput"
+                formControlName = "Email"
+                type="text"><br>
+
+                <div class="alert alert-danger"
+                 *ngIf="GetObject('Email').touched && GetObject('Email').invalid">
+                 Email Is Required
+                 </div>
+
+                <label class="FormLabel">Phone Number:</label>
+                <input class="FormInput"
+                formControlName = "PhoneNumber"
+                 type="text" /><br />
+
+                 <div class="alert alert-danger"
+                 *ngIf="GetObject('PhoneNumber').touched && GetObject('PhoneNumber').invalid">
+                 Phone Number Is Required !
+                  </div>
+
+                <label class="FormLabel">Message:</label>
+                <input class="FormInput InputMessage"
+                formControlName = "Message"
+                 type="text" />
+
+                 <div class="alert alert-danger message-alert"
+                 *ngIf="GetObject('Message').touched && GetObject('Message').invalid">
+                  Please Enter Your Message !
+                 </div>
+
+                <!--Submission Button For The Form-->
+                <button type="submit" class="SubmitButton"
+                [disabled]="MyForm.invalid"
+                 (click)="postFormData(MyForm.value)"><a  href = "/submit">Submit</a></button>
+            </form>
+        </div>
+    </div>
+</section>

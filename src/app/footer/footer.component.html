@@ -1,0 +1,82 @@
+<section id="ContactUs">
+    <div class="container">
+        <div class="row">
+            <!--Logo And Text Below It-->
+            <div class="col-md-6">
+                <span class="LogoFont2">Talal Hassballah</span>
+                <sub>F & B Concept Development & Consultancy </sub>
+                <br /><br /><br /><br /><br /><br />
+                <br />
+                <br />
+                <p class="FooterText" [innerHTML] = "FooterText"></p>
+            </div>
+
+            <!--Quick Links Section-->
+            <div class="col QuickLinks">
+                <h6>Quick Links</h6>
+                <br /><br /><br />
+                <ul class="list-group QuickLinksList">
+                    <li class="list-unstyled">
+                    <a  (click)="NavigateToSection('Home')" fragment="Home">Home</a>
+                </li>
+                <li class="list-unstyled">
+                    <a  (click)="NavigateToSection('AboutUs')" fragment="Home">About</a>
+                </li>   
+                <li class="list-unstyled">
+                    <a  (click)="NavigateToSection('OurService')" fragment="Home">Services</a>
+                </li>   
+                <li class="list-unstyled">
+                    <a  (click)="NavigateToSection('Request')" fragment="Home">Request</a>
+                </li>   
+                <li class="list-unstyled">
+                    <a  (click)="NavigateToSection('ContactUs')" fragment="Home">Contact Us</a>
+                </li>   
+                </ul>
+            </div>
+
+            <!--Contact Us Section-->
+            <div class="col ContactUs">
+                <h6>Contact Us</h6>
+                <br /><br />
+                <p class="Text" [innerHTML] = "Email">
+                
+                </p>
+                <br /><br />
+
+                <ul class="list-group list-group-horizontal ListOfIcons">
+                    <li class="list-unstyled list-group-item">
+                        <a [href]="FacebookLink">
+                            <i class="gg-facebook"></i>
+                        </a>
+
+                    </li>
+                    <li class="list-unstyled list-group-item">
+                        <a [href]="InstagramLink">
+                            <i class="gg-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-unstyled list-group-item">
+                        <a [href]="YoutubeLink">
+                            <i class="gg-youtube">
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--Developed & copyrights By BeBrand-->
+    <div class="container justify-content-center beBrand">
+        
+        <div class="firstDiv">
+            &copy; Copyright 2020&nbsp;<span>Talal Hassballah</span> <br> 
+        </div>
+            <div class="secoundDiv">
+            All Rights Reserved By <a href="https://bebrand.tv/" target="_blank"> BeBrand.tv.</a>
+        </div>
+        
+    </div>
+</section>

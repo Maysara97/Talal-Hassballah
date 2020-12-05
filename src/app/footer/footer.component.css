@@ -1,0 +1,317 @@
+#ContactUs sub {
+    bottom: -11.25em;
+    left: -4px;
+    color: white;
+}
+
+#ContactUs h6 {
+    color: white;
+    font-size: 25px;
+    margin-top: 107px;
+}
+
+.LogoFont2 {
+    color: white;
+    font-family: 'LogoFont';
+    font-size: 30px;
+    position: absolute;
+    top: 87px;
+}
+
+.col-md-4 sub {
+    bottom: -3.25em;
+    left: -51%;
+    font-family: Tahoma;
+    font-size: 12px;
+    color:white;
+}
+.QuickLinksList {
+    color: white !important;
+    position: absolute;
+    top: 54%;
+    left: 7%;
+}
+
+    .QuickLinksList a {
+        color:inherit;
+    }
+.FooterText {
+    font-size:13px;
+    color:white;
+}
+
+.QuickLinks {
+    left: 5%;
+}
+
+
+/*Start Drawing Icons Of Social Media [Face , insta , youtube]*/
+.gg-facebook {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px
+}
+
+    .gg-facebook::after,
+    .gg-facebook::before {
+        content: "";
+        display: block;
+        position: absolute;
+        box-sizing: border-box
+    }
+
+    .gg-facebook::before {
+        width: 8px;
+        height: 20px;
+        border-left: 4px solid;
+        border-top: 4px solid;
+        border-top-left-radius: 5px;
+        left: 6px
+    }
+
+    .gg-facebook::after {
+        width: 10px;
+        height: 4px;
+        background: currentColor;
+        top: 7px;
+        left: 4px;
+        transform: skew(-5deg)
+    }
+
+.gg-instagram {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    color: hotpink;
+}
+
+    .gg-instagram::after,
+    .gg-instagram::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute
+    }
+
+    .gg-instagram::after {
+        border: 2px solid;
+        left: 3px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        top: 3px
+    }
+
+    .gg-instagram::before {
+        border-radius: 3px;
+        width: 2px;
+        height: 2px;
+        background: currentColor;
+        right: 1px;
+        top: 1px
+    }
+
+.gg-youtube {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 10px;
+    box-shadow: 0 0 0 2px;
+    border-radius: 15px 15px 15px 15px / 45px 45px 45px 45px;
+    color:red;
+}
+
+    .gg-youtube::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        left: 7px;
+        top: 2px;
+        border-left: 4px solid currentColor;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent
+    }
+
+/*End Drawing Icons Of Social Media [Face , insta , youtube]*/
+
+
+.ListOfIcons {
+    margin-top: -17%;
+}
+.Text {
+    color: white;
+    font-size: larger;
+}
+
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: transparent;
+    /* border: 1px solid rgba(0, 0, 0, 0.125); */
+}
+.ContactUs p {
+    position: absolute;
+    top: 55%;
+}
+.beBrand{
+    color: white;
+    
+    margin-top: 5%;
+}
+
+.beBrand a{
+    color: white;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+.beBrand span{
+    font-weight: bolder;
+}
+.beBrand a:hover {
+    text-decoration: none;
+}
+.beBrand .firstDiv{
+    margin-left: 38%;
+}
+.beBrand .secoundDiv{
+    margin-left: 39%;
+}
+
+@media (max-width:768px) {
+    #ContactUs .col-md-4 {
+        display:flex;
+    }
+    .LogoFont2 {
+        color: white;
+        font-family: 'LogoFont';
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #ContactUs .col-md-4 sub {
+        color: white;
+        bottom: -7.25em;
+        left: -75px;
+        line-height: unset;
+        
+    }
+
+    #ContactUs h6 {
+        color: white;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .QuickLinksList {
+        color: white !important;
+        position: absolute;
+        top: 40%;
+        left: 7%;
+    }
+
+    .ListOfIcons {
+        margin-top: -6%;
+    }
+
+    .ContactUs p {
+        position: absolute;
+        top: 40%;
+    }
+    }
+
+    @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px){
+    #ContactUs h6 {
+        color: white;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .ContactUs p{
+        position: absolute;
+        top: 37%;
+        font-size: 15px;
+    }
+
+    .ListOfIcons {
+        margin-top: -29%;
+    }
+
+    .QuickLinksList {
+        color: white !important;
+        position: absolute;
+        top: 33%;
+        left: 10%;
+    }
+
+    .beBrand{
+        color: white;
+        /* font-family: fantasy;
+        font-size: 25px; */
+        margin-top: 10%;
+    }
+
+    .beBrand .firstDiv{
+        margin-left: 14%;
+    }
+    .beBrand .secoundDiv{
+        margin-left: 18%;
+    }
+
+
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+{
+    .ListOfIcons {
+        margin-top: -20%;
+    }
+
+    .ContactUs p{
+        position: absolute;
+        top: 46%;
+        font-size: 17px;
+    }
+
+    #ContactUs h6 {
+        color: white;
+        font-size: 20px;
+        margin-top: 86px;
+    }
+
+    .QuickLinksList{
+        color: white !important;
+        position: absolute;
+        top: 45%;
+        left: 13%;
+    }
+    .beBrand{
+        color: white;
+        
+        margin-top: 10%;
+    }
+
+    .beBrand .firstDiv{
+        margin-left: 14%;
+    }
+    .beBrand .secoundDiv{
+        margin-left: 18%;
+    }
+}

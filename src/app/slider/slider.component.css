@@ -1,0 +1,137 @@
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 350px;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+    height: 5%;
+}
+
+.HeaderOverlay {
+    
+    background-color: rgba(0,0,0,0.2) !important;
+    position: absolute;
+    left: 9%;
+    color: white;
+    top: 150px;
+    height: 77%;
+}
+
+    .HeaderOverlay h1 {
+        position: absolute;
+        left: 10%;
+        top: 15%;
+        font-family: cursive;
+        font-size: 68px;
+    }
+
+    /*--------------------------------Slider Start*/
+
+    .myClass{
+        width : 100% !important;
+    }
+    
+    
+    ngb-carousel img {
+        width: 100%;
+        outline: none;
+    }
+    
+    ngb-carousel {
+        width: inherit;
+        height: inherit;
+    }
+    
+    .carousel-inner {
+        overflow: visible;
+    }
+    
+    .carousel-item {
+        display: flex !important;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 1.2s ease-in-out, visibility 1.2s;
+        z-index: -1;
+    }
+    
+    .carousel-item.active{
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+    }
+    
+    .carousel-control-prev {
+         z-index: 20;
+    }
+    
+    .carousel-control-next {
+         z-index: 20;
+    }
+    
+    .carousel-indicators{
+        z-index: 20;
+    }
+    /*--------------------------------Slider End*/
+    
+    @media(max-width:768px){
+        
+        .HeaderOverlay {
+            
+            background-color: rgba(0,0,0,0.2) !important;
+            position: absolute;
+            left: 9%;
+            color: white;
+            top: 150px;
+            height: 77%;
+        }
+        
+        .HeaderOverlay h1 {
+            position: absolute;
+            left: 10%;
+            top: 21%;
+            font-family: cursive;
+            font-size: 37px;
+        }
+    }
+
+    @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px){
+    .HeaderOverlay h1 {
+        position: absolute;
+        left: 5%;
+        top: 75px;
+        font-family: cursive;
+        font-size: 15px;
+    }
+    .HeaderOverlay {
+        
+        background-color: rgba(0,0,0,0.2) !important;
+        position: absolute;
+        left: 9%;
+        color: white;
+        top: 4px;
+        height: 100%;
+    }
+    
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px)
+and (orientation : landscape){
+    .HeaderOverlay h1 {
+        position: absolute;
+        left: 5%;
+        top: 88px;
+        font-family: cursive;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!--Logo Of Talal Hassballah-->
+  <a class="navbar-brand TalalLogo"
+  href="#Home">
+
+     <span class="LogoName">Talal Hassballah</span>
+     <sub class="LogoSub">F & B Concept Development & Consultancy</sub>
+
+ </a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler CollabseButton"
+  (click)="ButtonClick()"
+  *ngIf="! CollabseKey;"
+  type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="justify-content-end"
+      id="NavBarItems">
+
+      <ul class="navbar-nav">
+
+          <li class="navbar-item">
+            <a class="nav-link" (click)="NavigateToSection('Home')" fragment="Home">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="nav-link" (click)="NavigateToSection('AboutUs')" fragment="AboutUs">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="nav-link" (click)="NavigateToSection('OurService')" fragment="OurService">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="nav-link" (click)="NavigateToSection('Request')" fragment="Request">Request</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="nav-link" (click)="NavigateToSection('AboutUs')" fragment="AboutUs">About Us</a>
+          </li>
+      </ul>
+    </div>
+
+
+    <!-- Navbar links For Small Screens-->
+  <div class="justify-content-end"
+  *ngIf="! CollabseKey && ButtonKey"
+  id="NavBarItemsSmall">
+
+  <ul class="navbar-nav">
+    <li class="navbar-item">
+      <a class="nav-link" (click)="NavigateToSection('Home')" fragment="Home">Home</a>
+    </li>
+
+    <li class="navbar-item">
+      <a class="nav-link" (click)="NavigateToSection('AboutUs')" fragment="AboutUs">About</a>
+    </li>
+
+    <li class="navbar-item">
+      <a class="nav-link" (click)="NavigateToSection('OurService')" fragment="OurService">Services</a>
+    </li>
+
+    <li class="navbar-item">
+      <a class="nav-link" (click)="NavigateToSection('Request')" fragment="Request">Request</a>
+    </li>
+
+    <li class="navbar-item">
+      <a class="nav-link" (click)="NavigateToSection('AboutUs')" fragment="AboutUs">About Us</a>
+    </li>
+  </ul>
+
+
+</div>
+    
+</nav>

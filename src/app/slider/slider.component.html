@@ -1,0 +1,28 @@
+<section id="Home" class="myClass">
+
+<ngb-carousel
+[showNavigationArrows]="true" 
+[showNavigationIndicators]="true"
+interval="12000"
+[keyboard]="true"
+[pauseOnHover]="true"
+[wrap]="true"
+[activeId]="'firstSlide'"
+>
+  <ng-template ngbSlide 
+  *ngFor="let slider of webSlider">
+
+    <div class="picsum-img-wrapper">
+      <img [src]="getFilePath(slider.imageFile)" [alt]="slider.title">
+      <div class="HeaderOverlay carousel-caption">
+        <h1 [innerHTML]= "slider.description">
+           
+        </h1>
+    </div>
+    </div>
+
+  
+  </ng-template>
+ 
+</ngb-carousel>
+</section>

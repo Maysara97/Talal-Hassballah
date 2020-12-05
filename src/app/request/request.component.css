@@ -1,0 +1,124 @@
+#Request {
+    background-color: #2C2C2C;
+}
+
+.Titles {
+    color: white;
+    font-size: xxx-large;
+    font-family: fantasy;
+}
+.Text {
+    color: white;
+    font-size: larger;
+}
+
+.FormLabel {
+    color: white;
+    font-size: 45px;
+    
+}
+
+.FormInput {
+    width: 500px;
+    height: 50px;
+    /* margin-left: 300px; */
+    float: right;
+    margin-left: 80px;
+}
+
+.InputMessage {
+    height: 200px !important;
+}
+
+.SubmitButton {
+    display: block;
+    color: white;
+    display: block;
+    margin-top: 17%;
+    /* position: absolute; */
+    margin-left: 50%;
+    background-color: #1d1717;
+    padding: 10px;
+    width: 15%;
+    border: 1px solid #1d1717;
+    border-radius: 25px;
+}
+
+    .SubmitButton a:hover {
+        /* background-color: cornflowerblue; */
+        color: black;
+        /* transition-duration: 1s;*/
+        text-decoration: none; 
+    }
+    .SubmitButton:hover {
+        background-color: cornflowerblue;
+        color: black;
+        transition-duration: 1s;
+        text-decoration: none;
+    }
+
+    .alert-danger{
+        width: 500px;
+        left: 390px;
+        top: -25px;
+    }
+
+    .message-alert{
+        top: 124px;
+        }
+
+@media (max-width:768px) {
+    .FormInput {
+        width:300px;
+        height: 50px;
+        /* margin-left: 300px; */
+        display:block;
+        float:none;
+    }
+    .InputMessage {
+        height: 100px !important;
+    }
+    .SubmitButton {
+        display: block;
+        color: white;
+        display: block;
+        margin-top: 28px;
+        /* position: absolute; */
+        margin-left: 50%;
+        background-color: #1d1717;
+        padding: 10px;
+        width: 100px;
+        border: 1px solid #1d1717;
+        border-radius: 25px;
+    }
+
+    .FormLabel {
+        color: white;
+        font-size: 20px;
+        /* padding: 72px; */
+        /*padding-right: 166px;*/
+        /*display:block;*/
+    }
+
+    .message-alert {
+        top: -1px;
+    }
+    .alert-danger {
+        width: 300px;
+        left: 79px;
+        top: -25px;
+    }
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px){
+    .FormInput {
+        width: 272px;
+        height: 50px;
+        display: block;
+        float: none;
+        margin-left: 61px;
+    }
+}

@@ -1,0 +1,54 @@
+<section id="AboutUs">
+
+    <div class="container">
+
+        <!--First Row [Text Beside Image]-->
+        <div class="row">
+            <!--About Us Text-->
+            <div class="col-md-6">
+                <h4 class="Titles">About Us</h4>
+                <p class="Text" [innerHTML] = "AboutUsText">
+                </p>      
+            </div>
+
+            <!--Image Beside About Us Text-->
+            <div class="col-md-6 mt-5"
+            *ngFor = "let image of aboutImages">
+                <img class="AboutImages" [src]="getFilePath(image)" />
+            </div>
+
+            <!--Third Row [Large Image In A Row]-->
+        <div class="row mt-4">
+            <img [src]="getFilePath(ThirdRowImage)"  alt="Our Place" style="width:100%" /> 
+        </div>  
+        </div>
+
+                   
+    </div>
+<!--The White Row Section-->
+    <div class="container-fluid">
+        <div class="row mt-5 WhiteRow justify-content-center align-content-center">
+            <div class="col-md-6 LeftDiv">
+                <h4 class="Titles2" [innerHTML] = "LeftText">
+                    
+                </h4>
+            </div>
+
+            <div class="col-md-6 RightDiv">
+                <p class="Text2" [innerHTML] = "RightText">
+                   
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Fifth Row [Last Large Image]-->
+    <div class="container-fluid">
+        <div class="row">
+            <img [src]="getFilePath(LastLargeImage)" alt="Our Images" style="width:100%" />
+        </div>
+    </div>
+
+
+   
+</section>

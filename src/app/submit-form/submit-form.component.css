@@ -1,0 +1,135 @@
+.TalalLogo{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    left: 42%;
+    position: absolute;
+    top: 10%;
+    width: 23%;
+}
+
+.LogoName {
+    font-family: LogoFont;
+    font-size: 166%;
+}
+
+.LogoSub{
+    bottom: -3.25em;
+    left: -70%;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.submittedMessage{
+    color: white;
+    font-family: cursive;
+    font-size: xx-large;
+    position: absolute;
+    top: 42%;
+    left: 35%;
+}
+
+.messageSucess{
+    position: absolute;
+    font-family: fantasy;
+    color: #73f591;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+.note{
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 44%;
+}
+
+@media (min-width:376px)
+and (max-width:657px){
+    .note {
+        color: white;
+        position: absolute;
+        top: 78%;
+        left: 44%;
+    }
+
+    .messageSucess {
+        position: absolute;
+        font-family: fantasy;
+        color: #73f591;
+        font-size: 30px;
+        position: absolute;
+        top: 61%;
+        left: 39%;
+    }
+
+    .TalalLogo{
+        text-decoration: none;
+        background-color: transparent;
+        color: white;
+        left: 34%;
+        position: absolute;
+        top: 10%;
+        width: 23%;
+    }
+
+    .LogoName {
+        font-family: LogoFont;
+        font-size: 165%;
+    }
+
+    .LogoSub {
+        bottom: -3.25em;
+        left: -255%;
+        font-family: Tahoma;
+        font-size: 12px;
+    }
+}
+
+@media (min-width:376px)
+and (max-width:657px)
+and (orientation : landscape){
+    .note {
+        color: white;
+        position: absolute;
+        top: 70%;
+        left: 26%;
+    }
+
+    .submittedMessage {
+        color: white;
+        font-family: cursive;
+        font-size: xx-large;
+        position: absolute;
+        top: 37%;
+        left: 9%;
+    }
+
+    .messageSucess {
+        position: absolute;
+        font-family: fantasy;
+        color: #73f591;
+        font-size: 30px;
+        position: absolute;
+        top: 53%;
+        left: 30%;
+    }
+
+    .TalalLogo {
+        text-decoration: none;
+        background-color: transparent;
+        color: white;
+        left: 27%;
+        position: absolute;
+        top: 10%;
+        width: 23%;
+    }
+
+    .LogoSub {
+        bottom: -3.25em;
+        left: -146%;
+        font-family: Tahoma;
+        font-size: 12px;
+    }
+}

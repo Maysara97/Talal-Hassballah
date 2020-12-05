@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css" ;
+
+/* @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+    .TalalLogo {
+        text-decoration: none;
+        background-color: transparent;
+        color: white;
+        left: 8%;
+        position: absolute;
+        top: 14%;
+        width: 41%;
+    }
+    .LogoSub[_ngcontent-qgn-c103] {
+        bottom: -3.25em;
+        left: -100%;
+        font-family: Tahoma;
+        font-size: 12px;
+    }
+
+}
+
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 93px !important;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+} */

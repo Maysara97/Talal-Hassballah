@@ -1,0 +1,18 @@
+#OurService{
+    margin-top: 7%;
+}
+
+.Titles {
+    color: white;
+    font-size: xxx-large;
+    font-family: fantasy;
+}
+.Text {
+    color: white;
+    font-size: larger;
+}
+
+.AboutImages {
+    width:100%;
+    height:auto;
+}

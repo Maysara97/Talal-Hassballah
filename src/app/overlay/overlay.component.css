@@ -1,0 +1,38 @@
+.HeaderOverlay {
+    width: 32%;
+    background-color: rgba(0,0,0,0.2) !important;
+    position: absolute;
+    left: 9%;
+    color: white;
+    top: 150px;
+    height: 77%;
+}
+
+    .HeaderOverlay h1 {
+        position: absolute;
+        left: 10%;
+        top: 15%;
+        font-family: cursive;
+        font-size: 68px;
+    }
+    
+    @media(max-width:768px){
+        
+        .HeaderOverlay {
+            width: 45%;
+            background-color: rgba(0,0,0,0.2) !important;
+            position: absolute;
+            left: 9%;
+            color: white;
+            top: 150px;
+            height: 77%;
+        }
+        
+        .HeaderOverlay h1 {
+            position: absolute;
+            left: 10%;
+            top: 21%;
+            font-family: cursive;
+            font-size: 37px;
+        }
+    }
